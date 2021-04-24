@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <title>Projeto Vue Game</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+
+            <template v-if="running">
+                <div class="score">
+                    <div>
+                        <h3>Jogador</h3>
+                        <div class="lifeBar">
+                            <div class="life" :class="{danger: lifePlayer < 20}" :style="{width: lifePlayer + '%'}">
+                            </div>
+                        </div>
+                        <h4>{{ lifePlayer }} HP</h4>
+                    </div>
+                    <div>
+                        <h3>Monstro</h3>
+                        <div class="lifeBar">
+                            <div class="life" :class="{danger: lifeMonster < 20}" :style="{width: lifeMonster + '%'}">
+                            </div>
+                        </div>
+                        <h4>{{ lifeMonster }} HP</h4>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button @click="attack(false)" class="btn attack"> <img src="images/sword.png"> </button>
+                    <button @click="attack(true)" class="btn special">
+                         <img src="images/magic.png">
+                         <span>{{countSpecial}}</span> 
+                    </button>
+                    <button @click="healAndDamage" class="btn heal"> <img src="images/spell.png">
+                         <span>{{countHeal}}</span> 
+                    </button>
+                    <button @click="giveUp" class="btn giveUp"> <img src="images/white-flag.png"> </button>
+                </div>
+            </template>
+
+            <template v-else>
+                <div class="welcome">
+                    <h1>KILL THE MONSTER</h1>
+                    <button @click="start" class="btn start">Jogar</button>
+                </div>
+                
+                <div v-if="hasResult" class="result">
+                    <div v-if="lifePlayer == 0" class="loose">
+                        <h4>Game over</h4>
+                    </div>
+                    <div v-else class="win">
+                        <h4>Você ganhou</h4>
+                    </div>
+                </div>
+            </template>
+                
+            <!--             <div v-if="log" class="log">
+                <div class="LogPlayer">
+                    <h5>Player</h5>
+                </div>
+                <div class="LogMonster">
+                    <h5>Monstro</h5>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

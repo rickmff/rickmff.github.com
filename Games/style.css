@@ -1,0 +1,126 @@
+body {
+    background-color: #333;
+    color: white;
+    font-family: 'Zen Dots', cursive;
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+span {
+    color: #fff;
+    text-shadow: 1px 1px 10px #0000009b;
+}
+
+.container {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: block;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 3rem 10rem;
+    box-shadow: 4px 10px 10px 3px #0000002e;
+}
+
+.lifeBar {
+    background-color: #f2f2f2;
+    border: 2px solid black;
+    width: 350px;
+    height: 30px;
+    margin: 2rem
+}
+
+.lifeBar .life {
+    height: 100%;
+    background-image: linear-gradient(rgb(42, 241, 7), rgb(35, 184, 9));
+    width: 100%;
+}
+
+.lifeBar .life.danger {
+    background-color: linear-gradient(rgb(241, 7, 7), rgb(184, 44, 9));
+}
+
+.result, .welcome {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3rem 10rem;
+    box-shadow: 4px 10px 10px 3px #0000002e;
+}
+
+.win {
+    text-shadow: -3px 3px 15px #000000c2;
+    color: rgb(12, 206, 12);
+}
+.loose {
+    text-shadow: -3px 3px 15px #000000c2;
+    color: rgb(216, 12, 12);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 10rem;
+    box-shadow: 4px 10px 10px 3px #0000002e;
+}
+
+.btn {
+    padding: 10px 25px;
+    margin: 0 2rem;
+    border: none;
+    color: #333;
+    box-shadow: 4px 10px 10px 3px #0000002e;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 3px;
+    text-transform: uppercase;
+    opacity: 0.8;
+} 
+
+.btn:hover {
+    opacity: 1;
+    box-shadow: 7px 12px 10px 0px #0000004f;
+    cursor: pointer;
+}
+
+.attack {
+    background-image: linear-gradient(rgb(184, 9, 38),rgb(255, 32, 32));
+}
+.attack img, .special img, .heal img, .giveUp img {
+    zoom: 0.1;
+}
+
+.special {
+    background-image: linear-gradient(rgb(116, 7, 241), rgb(152, 0, 199));
+}
+
+.heal {
+    background-image: linear-gradient(rgb(33, 126, 17), rgb(35, 184, 9));
+}
+
+.giveUp {
+    background-image: linear-gradient(rgb(87, 87, 87), rgb(104, 104, 104));
+}
+
+.start {
+    background-color: rgb(33, 33, 151);
+    color: white;
+    padding: 15px 40px;
+    max-height:50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.log {
+    padding: 3rem 10rem;
+    box-shadow: 4px 10px 10px 3px #0000002e;
+}
