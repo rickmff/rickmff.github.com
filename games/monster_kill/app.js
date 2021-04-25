@@ -31,6 +31,7 @@ new Vue({
 				this.countHeal = 7
 				this.countSpecial = 7
 				this.logs = []
+				this.congratulations = false
 				return this.running = true
 			}
 			else if (this.starMonster == 2) {
@@ -40,6 +41,7 @@ new Vue({
 				this.countHeal = 5
 				this.countSpecial = 5
 				this.logs = []
+				this.congratulations = false
 				return this.running = true
 			}
 			else if (this.starMonster == 3) {
@@ -49,6 +51,7 @@ new Vue({
 				this.countHeal = 3
 				this.countSpecial = 3
 				this.logs = []
+				this.congratulations = false
 				return this.running = true
 			}
 		},

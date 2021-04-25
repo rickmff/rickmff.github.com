@@ -1,5 +1,5 @@
 body {
-    background-color: #333;
+    background-color: hsl(268, 93%, 6%);
     color: white;
     font-family: 'Zen Dots', cursive;
     letter-spacing: 1.5px;
@@ -158,6 +158,6 @@ ul {
 }
 
 .monster {
-    background-image: linear-gradient(rgb(141, 76, 1),rgb(71, 28, 2));
+    background-image: linear-gradient(rgb(56, 56, 56),rgb(0, 0, 0));
     color: #fff;
 }

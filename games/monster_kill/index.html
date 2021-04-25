@@ -37,13 +37,17 @@
                 <div class="buttons">
                     <button @click="attack(false)" class="btn attack">
                         <img src="images/sword.png">
+                        <br><br>
                         <span>{{ countAttack }}</span>
                     </button>
                     <button @click="attack(true)" class="btn special">
                         <img src="images/magic.png">
+                        <br><br>
                         <span>{{ countSpecial }}</span>
                     </button>
-                    <button @click="healAndDamage" class="btn heal"> <img src="images/spell.png">
+                    <button @click="healAndDamage" class="btn heal"> 
+                        <img src="images/spell.png">
+                        <br><br>
                         <span>{{ countHeal }}</span>
                     </button>
                     <button @click="giveUp" class="btn giveUp"> <img src="images/white-flag.png"> </button>
