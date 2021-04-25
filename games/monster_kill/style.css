@@ -19,12 +19,13 @@ span {
 }
 
 .container {
-    margin-left: 25%;
-    margin-right: 25%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10%;
 }
 
 .score {
+    margin: 2rem 0;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -35,7 +36,7 @@ span {
 .lifeBar {
     background-color: #f2f2f2;
     border: 2px solid black;
-    width: 350px;
+    width: 300px;
     height: 30px;
     margin: 2rem
 }
@@ -47,7 +48,7 @@ span {
 }
 
 .lifeBar .life.danger {
-    background-color: linear-gradient(rgb(241, 7, 7), rgb(184, 44, 9));
+    background-image: linear-gradient(rgb(184, 9, 38),rgb(255, 32, 32)) !important;
 }
 
 .result, .welcome {
@@ -67,6 +68,7 @@ span {
 }
 
 .buttons {
+    margin: 2rem 0;
     display: flex;
     justify-content: space-around;
     padding: 3rem 10rem;
@@ -84,27 +86,29 @@ span {
     border-radius: 3px;
     text-transform: uppercase;
     opacity: 0.8;
+    transition: 1s;
 } 
 
 .btn:hover {
     opacity: 1;
+    transition: 1s;
     box-shadow: 7px 12px 10px 0px #0000004f;
     cursor: pointer;
 }
 
 .attack {
-    background-image: linear-gradient(rgb(184, 9, 38),rgb(255, 32, 32));
+    background-image: linear-gradient(rgb(255, 32, 32),rgb(184, 9, 38));
 }
 .attack img, .special img, .heal img, .giveUp img {
     zoom: 0.1;
 }
 
 .special {
-    background-image: linear-gradient(rgb(116, 7, 241), rgb(152, 0, 199));
+    background-image: linear-gradient(rgb(152, 0, 199),rgb(116, 7, 241));
 }
 
 .heal {
-    background-image: linear-gradient(rgb(33, 126, 17), rgb(35, 184, 9));
+    background-image: linear-gradient(rgb(35, 184, 9),rgb(33, 126, 17));
 }
 
 .giveUp {
@@ -112,7 +116,7 @@ span {
 }
 
 .start {
-    background-color: rgb(33, 33, 151);
+    background-image: linear-gradient(rgb(5, 71, 226),rgb(27, 0, 182));
     color: white;
     padding: 15px 40px;
     max-height:50px;
@@ -120,7 +124,40 @@ span {
     margin-bottom: auto;
 }
 
-.log {
-    padding: 3rem 10rem;
+.logs {
+    margin: 2rem 0;
     box-shadow: 4px 10px 10px 3px #0000002e;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0 !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logs ul li {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin: .5rem 1rem;
+    padding: 15px 0px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 4px 10px 10px 3px #0000002e;
+    text-shadow: 5px 5px 10px #00000057;
+    opacity: 0.8;
+}
+
+.player {
+    background-image: linear-gradient(rgb(5, 71, 226),rgb(27, 0, 182));
+    color: #fff;
+}
+
+.monster {
+    background-image: linear-gradient(rgb(141, 76, 1),rgb(71, 28, 2));
+    color: #fff;
 }
