@@ -130,6 +130,7 @@ new Vue({
 						this.level = "novamente"
 					}
 					else if (this.lifeMonster == 0 && this.starMonster == 3) {
+						this.starMonster = 1
 						this.congratulations = true
 						this.level = "novamente"
 					}
