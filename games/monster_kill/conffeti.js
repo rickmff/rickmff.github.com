@@ -1,7 +1,7 @@
 for(i=0; i<100; i++) {
     // Random rotation
     var randomRotation = Math.floor(Math.random() * 360);
-      // Random Scale
+    // Random Scale
     var randomScale = Math.random() * 1;
     // Random width & height between 0 and viewport
     var randomWidth = Math.floor(Math.random() * Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
@@ -9,7 +9,6 @@ for(i=0; i<100; i++) {
     
     // Random animation-delay
     var randomAnimationDelay = Math.floor(Math.random() * 15);
-    console.log(randomAnimationDelay);
   
     // Random colors
     var colors = ['#0CD977', '#FF1C1C', '#FF93DE', '#5767ED', '#FFC61C', '#8497B0']

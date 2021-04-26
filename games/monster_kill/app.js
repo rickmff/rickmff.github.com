@@ -80,7 +80,7 @@ new Vue({
 					this.countSpecial = this.countSpecial - 1
 				}
 				else if (special == true) {
-					this.damage('lifeMonster', 0, 0, false, 'Herói', 'Monstro', 'attack')
+					this.damage('lifeMonster', 0, 0, false, 'Herói', 'Monstro', 'special')
 				}
 				else if (this.countAttack > 0) {
 					this.damage('lifeMonster', 5, 10, false, 'Herói', 'Monstro', 'attack')
