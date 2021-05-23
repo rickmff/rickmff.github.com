@@ -1,5 +1,11 @@
 Aqui por enquanto está o meu mockup para meu site de portifolio
 
+# Frontend
+## Vue.js
+## Axios
+## Vuex
+## Vue Router
+<br>
 # Backend
 ## passport
 ## consign
