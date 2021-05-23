@@ -5,7 +5,7 @@ Aqui por enquanto está o meu mockup para meu site de portifolio
 ## Axios
 ## Vuex
 ## Vue Router
-<br>
+
 # Backend
 ## passport
 ## consign
